@@ -1,0 +1,16 @@
+/* reset global styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+/* main */
+/* Hero section */
+/* Instructions section */
+/* Instruments section */
+/* Footer */
