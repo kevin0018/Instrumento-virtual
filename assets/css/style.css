@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Cal+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Cal+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playpen+Sans+Hebrew:wght@100..800&family=Playpen+Sans:wght@100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* reset global styles */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -6,11 +9,43 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: "Playpen Sans Hebrew", cursive;
+    font-optical-sizing: auto;
+    font-weight: 12px;
+    font-style: normal;
 }
 
 /* Header */
 /* main */
 /* Hero section */
+.hero {
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.hero-title {
+    font-family: 'Bad Script', cursive;
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.hero-credits{
+    color: #fff;
+    align-self: flex-end;
+}
+
+.hero-credits a {
+    color: #fff;
+}
 /* Instructions section */
 /* Instruments section */
 /* Footer */
