@@ -48,4 +48,27 @@ body {
 }
 /* Instructions section */
 /* Instruments section */
+.instruments-title {
+    font-family: 'Bad Script', cursive;
+    font-size: 2rem;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.instrument {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    border: #6D3C11 solid 2px;
+    border-radius: 10px;
+}
+
+.instrument img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 /* Footer */
