@@ -2,62 +2,92 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Virtual Melody</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
     <!-- Header -->
     <header class="header">
         <div class="logo">
-    <img src="./assets/images/logo sol.png" alt="Logo de la página">
-  </div>
-    
+            <img src="./assets/images/logo sol.png" alt="Logo de la página">
+        </div>
+
         <!-- Menú horizontal (visible en escritorio) -->
         <nav class="nav-desktop">
-          <a href="#">INICIO</a>
-          <a href="#">INSTRUCCIONES</a>
-          <a href="#">INSTRUMENTO</a>
-          <a href="#">SOBRE NOSOTROS</a>
+            <a href="#">INICIO</a>
+            <a href="#">INSTRUCCIONES</a>
+            <a href="#">INSTRUMENTO</a>
+            <a href="#">SOBRE NOSOTROS</a>
         </nav>
-    
+
         <!-- Botón hamburguesa (visible en móvil) -->
         <button class="hamburger" onclick="openMenu()">☰</button>
-      </header>
-    
-      <!-- Menú lateral para móvil -->
-      <aside class="sidebar" id="sidebar">
+    </header>
+
+    <!-- Menú lateral para móvil -->
+    <aside class="sidebar" id="sidebar">
         <button class="close-btn" onclick="closeMenu()">✕</button>
         <nav class="sidebar-nav">
-          <a href="#">INICIO</a>
-          <a href="#">INSTRUCCIONES</a>
-          <a href="#">INSTRUMENTO</a>
-          <a href="#">SOBRE NOSOTROS</a>
+            <a href="#">INICIO</a>
+            <a href="#">INSTRUCCIONES</a>
+            <a href="#">INSTRUMENTO</a>
+            <a href="#">SOBRE NOSOTROS</a>
         </nav>
-      </aside>
-    
-      <div class="overlay" id="overlay" onclick="closeMenu()"></div>
-    
+    </aside>
+
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
         <section class="hero">
             <h1 class="hero-title">Virtual Melody</h1>
             <p class="hero-credits">
-                Imagen de un piano y guitarra Foto de 
-                    <a href="https://unsplash.com/es/@alanalves?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-                        Alan Alves
-                    </a>
-                    en
-                    <a href="https://unsplash.com/es/fotos/una-partitura-sentada-frente-a-un-piano-8_suKmYks94?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-                        Unsplash
-                    </a>
+                Imagen de un piano y guitarra Foto de
+                <a
+                    href="https://unsplash.com/es/@alanalves?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                    Alan Alves
+                </a>
+                en
+                <a
+                    href="https://unsplash.com/es/fotos/una-partitura-sentada-frente-a-un-piano-8_suKmYks94?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                    Unsplash
+                </a>
             </p>
         </section>
         <!-- Instructions Section -->
-        <section class="instructions"></section>
+        <section class="instructions">
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="carousell-slide">
+                        <div>
+                            <h2>Piano</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse unde quisquam repellat
+                                magnam accusamus numquam at debitis nesciunt dolore! Veritatis sed voluptatum illum
+                                officiis amet nobis obcaecati ipsam vel cum?</p>
+                        </div>
+                        <img src="/assets/images/piano.jpg" width="200xp" alt="piano">
+                    </div>
+                    <div class="carousell-slide">
+                        <div>
+                            <h2>Guitarra</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sapiente sunt tempora
+                                perferendis debitis eos necessitatibus a aliquid nesciunt laudantium obcaecati nihil,
+                                accusamus hic quo fuga pariatur molestias commodi doloribus?</p>
+                        </div>
+                        <img src="/assets/images/guitar.jpg" width="200xp" alt="guitar">
+                    </div>
+                </div>
+                <div class="carousel-buttons">
+                    <button class="carousel-button prev">&lt;</button>
+                    <button class="carousel-button prev">&gt;</button>
+                </div>
+            </div>
+            </div>
+        </section>
         <!-- Instruments Section -->
         <section class="instruments">
             <h2 class="instruments-title">Instrumentos</h2>
@@ -66,12 +96,14 @@
                     <figure>
                         <img src="./assets/images/piano.jpg" alt="Piano" class="instrument-image">
                         <figcaption class="instrument-credits">
-                            Piano Foto de 
-                            <a href="https://unsplash.com/es/@shotsbywolf?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                            Piano Foto de
+                            <a
+                                href="https://unsplash.com/es/@shotsbywolf?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
                                 Geert Pieters
                             </a>
-                             en
-                            <a href="https://unsplash.com/es/fotos/un-primer-plano-de-un-piano-con-una-persona-en-el-fondo-8QrPJ3Kfie4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                            en
+                            <a
+                                href="https://unsplash.com/es/fotos/un-primer-plano-de-un-piano-con-una-persona-en-el-fondo-8QrPJ3Kfie4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
                                 Unsplash
                             </a>
                         </figcaption>
@@ -83,19 +115,21 @@
                     <figure>
                         <img src="./assets/images/guitar.jpg" alt="Guitarra" class="instrument-image">
                         <figcaption class="instrument-credits">
-                            Guitarra Foto de 
-                            <a href="https://unsplash.com/es/@trnfica?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                            Guitarra Foto de
+                            <a
+                                href="https://unsplash.com/es/@trnfica?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
                                 Filip Lukic
                             </a>
-                             en 
-                             <a href="https://unsplash.com/es/fotos/guitarra-acustica-marron-sobre-suelo-de-madera-marron-Os1b1JUQ4_c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                            en
+                            <a
+                                href="https://unsplash.com/es/fotos/guitarra-acustica-marron-sobre-suelo-de-madera-marron-Os1b1JUQ4_c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
                                 Unsplash
                             </a>
                         </figcaption>
                     </figure>
                     <h3 class="instrument-name">Guitarra</h3>
                     <p class="instrument-description">Una guitarra virtual para tocar tus canciones favoritas</p>
-            </div>
+                </div>
         </section>
         <!-- About us Section -->
         <section class="about">
@@ -110,19 +144,23 @@
                     <img src="assets/images/Maria anime.png" alt="maria">
                     <h2 class="about-title">María Romero</h2>
                     <p>
-                        ¡Hola! Soy María. Estoy aprendiendo Front End y me encanta crear páginas bonitas, fáciles de usar y accesibles para todos. Me motiva seguir creciendo en tech y aportar mi toque multicultural en cada proyecto.
+                        ¡Hola! Soy María. Estoy aprendiendo Front End y me encanta crear páginas bonitas, fáciles de
+                        usar y accesibles para todos. Me motiva seguir creciendo en tech y aportar mi toque
+                        multicultural en cada proyecto.
                     </p>
                 </div>
                 <div class="card">
-                <img src="assets/images/Katerin anime.png" alt="katerin">
-                <h2 class="about-title">Katerin Colindres</h2>
+                    <img src="assets/images/Katerin anime.png" alt="katerin">
+                    <h2 class="about-title">Katerin Colindres</h2>
                     <p>
-                        Hola, soy Katerin, una chica curiosa por naturaleza y con muchas ganas de crecer. Después de mucho buscar, encontré Factoría F5, y sin pensarlo dos veces, me lancé a la piscina y comencé el bootcamp de desarrollo frontend. ¡¡¡Y no puedo estar más feliz!!!
+                        Hola, soy Katerin, una chica curiosa por naturaleza y con muchas ganas de crecer. Después de
+                        mucho buscar, encontré Factoría F5, y sin pensarlo dos veces, me lancé a la piscina y comencé el
+                        bootcamp de desarrollo frontend. ¡¡¡Y no puedo estar más feliz!!!
                     </p>
                 </div>
                 <div class="card">
-                <img src="assets/images/Jhonatan anime.png" alt="jhonatan">
-                <h2 class="about-title">Jhonatan Jamioy</h2>
+                    <img src="assets/images/Jhonatan anime.png" alt="jhonatan">
+                    <h2 class="about-title">Jhonatan Jamioy</h2>
                     <p>Hola mundo</p>
                 </div>
             </div>
@@ -130,8 +168,8 @@
     </main>
     <!-- Footer -->
     <footer>
- 
-    </div>
+
+        </div>
         <p class="copyr">&copy; 2025 Virtual Melody </p>
     </footer>
     <script src="./assets/js/script.js"></script>
