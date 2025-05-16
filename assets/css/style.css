@@ -152,10 +152,17 @@ figure {
     display: block;
 }
 
+.about-title {
+    font-size: 1.5rem;
+}
+
 .card p {
     margin: 8px 0;
     font-size: 1rem;
     color: black;
+    font-family: "Playpen Sans Hebrew", cursive;
+    padding: 12px;
+    text-align: left;
 }
 
 /* Footer */
