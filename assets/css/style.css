@@ -11,7 +11,7 @@ body {
     padding: 0;
     font-family: "Playpen Sans Hebrew", cursive;
     font-optical-sizing: auto;
-    font-weight: 12px;
+    font-size: 12px;
     font-style: normal;
 }
 
@@ -26,6 +26,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
     max-width: 100%;
     height: 100vh;
 }
@@ -40,7 +41,10 @@ body {
 
 .hero-credits{
     color: #fff;
-    align-self: flex-end;
+    font-size: 9px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .hero-credits a {
@@ -49,4 +53,50 @@ body {
 /* Instructions section */
 
 /* Instruments section */
+.instruments-title {
+    font-family: 'Bad Script', cursive;
+    font-size: 2.5rem;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+}
+
+.instrument {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    border: #6D3C11 solid 6px;
+    border-radius: 16px;
+}
+
+.instrument img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    border-bottom: #6D3C11 solid 4px;
+}
+
+.instrument-credits {
+    font-size: 0.5rem;
+    color: #484848;
+    text-align: end;
+}
+
+.instrument-credits a {
+    color: #484848;
+}
+
+figure {
+    margin: 0;
+}
+
+.instrument-name {
+    font-family: 'Bad Script', cursive;
+    font-size: 1.5rem;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+}
+
 /* Footer */
