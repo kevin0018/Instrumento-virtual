@@ -329,3 +329,16 @@ figure {
         font-size: 1.1rem;
     }
 }
+@media (min-width: 1280px) {
+     .photos {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 24px;
+
+  }
+  .card {
+    margin: 0;
+  }
+
+}
