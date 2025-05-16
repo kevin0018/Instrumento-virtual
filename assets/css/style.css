@@ -55,6 +55,14 @@ body {
 
 /* Instructions section */
 /* Instruments section */
+.instruments-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 16px;
+}
+
 .instruments-title {
     font-family: 'Bad Script', cursive;
     font-size: 2.5rem;
@@ -64,17 +72,21 @@ body {
 }
 
 .instrument {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem;
-    border: #6D3C11 solid 6px;
-    border-radius: 16px;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.966);
+    border-radius: 12px;
+    border: #6D3C11 solid 4px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 24px;
 }
 
 .instrument img {
     width: 100%;
-    height: auto;
+    height: 300px;
+    object-fit: cover;
+    display: block;
     border-radius: 10px 10px 0 0;
     border-bottom: #6D3C11 solid 4px;
 }
@@ -101,7 +113,15 @@ figure {
     margin: 0;
 }
 
-/* Footer */
+.instrument-description {
+    font-size: 1rem;
+    color: #000000;
+    text-align: start;
+    margin: 0;
+    padding: 12px;
+}
+
+/* cards css */
 .titulosn {
     font-family: 'Bad Script', cursive;
     text-align: center;
@@ -136,13 +156,13 @@ figure {
     margin: 8px 0;
     font-size: 1rem;
     color: black;
-    font-family: "Playpen Sans Hebrew", cursive;
 }
+
+/* Footer */
 
 .copyr {
     text-align: center;
     margin: 20px 0 10px 0;
-    font-family: "Playpen Sans Hebrew", cursive;
     color: #000000;
     font-size: 0.9rem;
 }
