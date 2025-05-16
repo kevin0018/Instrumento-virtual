@@ -147,10 +147,15 @@ body {
 
 /* Instructions section */
 
+.instructions {
+    background-color: #484848;
+    padding-bottom: 30px;
+}
+
 .instructions-title {
     font-family: 'Bad Script', cursive;
     font-size: 2.5rem;
-    color: #000000;
+    color: #fff;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -162,39 +167,43 @@ body {
     margin: 0;
     overflow: hidden;
     border-radius: 16px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     background: #fff;
 }
+
 .carousel-track {
     display: flex;
     transition: transform 0.3s ease-in-out;
 }
+
 .carousel-slide {
     min-width: 100%;
-    box-sizing: border-box;
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: row;
     text-align: center;
-    padding: 24px 12px;
+    padding: 0 12px;
 }
+
 .slide-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 0 12px 0;
 }
+
 .slide-title {
     margin: 0 0 8px 0;
     font-size: 1.2rem;
     font-weight: bold;
     color: #222;
 }
+
 .slide-text {
     margin: 0;
     color: #555;
     font-size: 1rem;
 }
+
 .slide-image {
     width: 100%;
     height: 160px;
@@ -203,12 +212,14 @@ body {
     object-fit: cover;
     flex-shrink: 0;
 }
+
 .carousel-buttons {
     display: flex;
     justify-content: space-between;
     margin: 16px 0 0 0;
     padding: 0 24px 16px 24px;
 }
+
 .carousel-btn {
     background: #3498db;
     color: #fff;
@@ -219,6 +230,7 @@ body {
     cursor: pointer;
     transition: background 0.2s;
 }
+
 .carousel-btn:disabled {
     background: #ccc;
     cursor: not-allowed;
@@ -295,12 +307,14 @@ figure {
 .about {
     background-color: #484848;
 }
+
 .titulosn {
     font-family: 'Bad Script', cursive;
     font-size: 2.5rem;
     text-align: center;
     color: #fff;
 }
+
 /* cards css */
 .photos {
     display: flex;
@@ -359,63 +373,98 @@ figure {
         display: block;
     }
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .photos {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 32px;
-    padding: 24px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+        padding: 24px;
     }
+
     .card {
         width: 45%;
         margin-bottom: 0;
     }
+
     .card img {
-        height:300px;
+        height: 300px;
     }
+
     .about-title {
         font-size: 1.7rem;
     }
+
     .card p {
         font-size: 1.05rem;
     }
-}
-@media (min-width: 1025px) {
-     .photos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px;
+
+    carousel-container {
+        max-width: 370px;
     }
+
+    .carousel-slide {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        padding: 24px 12px;
+    }
+
+    .slide-content {
+        flex: 1;
+        padding: 0 12px 0 0;
+    }
+
+    .slide-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .photos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+
     .card {
         width: 22%;
         margin: 12px;
         box-sizing: border-box;
     }
+
     .card img {
         height: 250px;
-         width: 100%;
+        width: 100%;
         height: auto;
     }
+
     .about-title {
         font-size: 1.8rem;
     }
+
     .card p {
         font-size: 1.1rem;
     }
 }
-@media (min-width: 1280px) {
-     .photos {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 24px;
 
-  }
-  .card {
-    margin: 0;
-  }
+@media (min-width: 1280px) {
+    .photos {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 24px;
+
+    }
+
+    .card {
+        margin: 0;
+    }
 
 }
