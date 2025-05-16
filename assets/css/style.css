@@ -291,13 +291,17 @@ figure {
     padding: 12px;
 }
 
-/* cards css */
+/*about*/
+.about {
+    background-color: #484848;
+}
 .titulosn {
     font-family: 'Bad Script', cursive;
     font-size: 2.5rem;
     text-align: center;
+    color: #fff;
 }
-
+/* cards css */
 .photos {
     display: flex;
     flex-direction: column;
@@ -354,4 +358,64 @@ figure {
     .hamburger {
         display: block;
     }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .photos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    padding: 24px;
+    }
+    .card {
+        width: 45%;
+        margin-bottom: 0;
+    }
+    .card img {
+        height:300px;
+    }
+    .about-title {
+        font-size: 1.7rem;
+    }
+    .card p {
+        font-size: 1.05rem;
+    }
+}
+@media (min-width: 1025px) {
+     .photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    }
+    .card {
+        width: 22%;
+        margin: 12px;
+        box-sizing: border-box;
+    }
+    .card img {
+        height: 250px;
+         width: 100%;
+        height: auto;
+    }
+    .about-title {
+        font-size: 1.8rem;
+    }
+    .card p {
+        font-size: 1.1rem;
+    }
+}
+@media (min-width: 1280px) {
+     .photos {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 24px;
+
+  }
+  .card {
+    margin: 0;
+  }
+
 }
