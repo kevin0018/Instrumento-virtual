@@ -59,33 +59,30 @@
             </p>
         </section>
         <!-- Instructions Section -->
+
         <section class="instructions">
-            <div class="carousel">
-                <div class="carousel-track">
-                    <div class="carousell-slide">
-                        <div>
-                            <h2>Piano</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse unde quisquam repellat
-                                magnam accusamus numquam at debitis nesciunt dolore! Veritatis sed voluptatum illum
-                                officiis amet nobis obcaecati ipsam vel cum?</p>
+            <h2 class="instructions-title">Instrucciones</h2>
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Piano</h3>
+                            <p class="slide-text">This is the description for slide 1.</p>
                         </div>
-                        <img src="/assets/images/piano.jpg" width="200xp" alt="piano">
+                        <img class="slide-image" src="/assets/images/piano.jpg" alt="piano" />
                     </div>
-                    <div class="carousell-slide">
-                        <div>
-                            <h2>Guitarra</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sapiente sunt tempora
-                                perferendis debitis eos necessitatibus a aliquid nesciunt laudantium obcaecati nihil,
-                                accusamus hic quo fuga pariatur molestias commodi doloribus?</p>
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Guitarra</h3>
+                            <p class="slide-text">This is the description for slide 2.</p>
                         </div>
-                        <img src="/assets/images/guitar.jpg" width="200xp" alt="guitar">
+                        <img class="slide-image" src="/assets/images/guitar.jpg" alt="guitar" />
                     </div>
                 </div>
                 <div class="carousel-buttons">
-                    <button class="carousel-button prev">&lt;</button>
-                    <button class="carousel-button prev">&gt;</button>
+                    <button class="carousel-btn" id="prevBtn">&lt;</button>
+                    <button class="carousel-btn" id="nextBtn">&gt;</button>
                 </div>
-            </div>
             </div>
         </section>
         <!-- Instruments Section -->
@@ -133,16 +130,16 @@
         </section>
         <!-- About us Section -->
         <section class="about">
-            <h1 class="titulosn">Sobre nosotros</h1>
+            <h2 class="titulosn">Sobre nosotros</h2>
             <div class="photos">
                 <div class="card">
                     <img src="assets/images/Kevin anime.png" alt="kevin">
-                    <h2 class="about-title">Kevin Hernández</h2>
+                    <h3 class="about-title">Kevin Hernández</h3>
                     <p>Hola mundo</p>
                 </div>
                 <div class="card">
                     <img src="assets/images/Maria anime.png" alt="maria">
-                    <h2 class="about-title">María Romero</h2>
+                    <h3 class="about-title">María Romero</h3>
                     <p>
                         ¡Hola! Soy María. Estoy aprendiendo Front End y me encanta crear páginas bonitas, fáciles de
                         usar y accesibles para todos. Me motiva seguir creciendo en tech y aportar mi toque
@@ -151,7 +148,7 @@
                 </div>
                 <div class="card">
                     <img src="assets/images/Katerin anime.png" alt="katerin">
-                    <h2 class="about-title">Katerin Colindres</h2>
+                    <h3 class="about-title">Katerin Colindres</h3>
                     <p>
                         Hola, soy Katerin, una chica curiosa por naturaleza y con muchas ganas de crecer. Después de
                         mucho buscar, encontré Factoría F5, y sin pensarlo dos veces, me lancé a la piscina y comencé el
@@ -160,7 +157,7 @@
                 </div>
                 <div class="card">
                     <img src="assets/images/Jhonatan anime.png" alt="jhonatan">
-                    <h2 class="about-title">Jhonatan Jamioy</h2>
+                    <h3 class="about-title">Jhonatan Jamioy</h3>
                     <p>Hola mundo</p>
                 </div>
             </div>
@@ -168,11 +165,10 @@
     </main>
     <!-- Footer -->
     <footer>
-
-        </div>
         <p class="copyr">&copy; 2025 Virtual Melody </p>
     </footer>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/carousel.js"></script>
 </body>
 
 </html>
