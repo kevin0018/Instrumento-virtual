@@ -352,7 +352,7 @@ figure {
 .photos {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     gap: 24px;
     padding: 16px;
 }
@@ -384,12 +384,16 @@ figure {
 }
 
 .card p {
-    margin: 8px 0;
+    margin: 0;
     font-size: 1rem;
     color: black;
     font-family: "Playpen Sans Hebrew", cursive;
     padding: 12px;
     text-align: left;
+}
+
+.card h3 {
+    margin: 0;
 }
 
 /* Footer */
@@ -434,7 +438,7 @@ figure {
     }
 
     .card img {
-        height: 300px;
+        height: 500px;
     }
 
     .about-title {
@@ -476,19 +480,17 @@ figure {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 24px;
     }
 
     .card {
-        width: 22%;
+        width: 35%;
         margin: 12px;
         box-sizing: border-box;
     }
 
     .card img {
-        height: 250px;
+        height: 450px;
         width: 100%;
-        height: auto;
     }
 
     .about-title {
@@ -530,11 +532,23 @@ figure {
         flex-wrap: nowrap;
         justify-content: center;
         gap: 24px;
-
+        flex-direction: row;
+        align-items: stretch;
     }
 
     .card {
-        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height: 650px;
+    }
+
+    .card img {
+        flex-shrink: 0;
+    }
+    .card p {
+        flex: 1;
+        display: flex;
+        align-items: flex-start;
     }
 
     /* Carousel */
