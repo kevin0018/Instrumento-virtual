@@ -3,7 +3,7 @@ import Instrument from './instrument.js';
 export default class Guitar extends Instrument {
 	constructor(type = "classic") {
 		const noteNames = ["DO", "SOL", "LA", "MI", "RE", "SI"];
-		super("Guitar", noteNames, "./assets/sounds/guitar");
+		super("Guitar", noteNames, "../assets/sounds/guitar");
 		this.type = type;
 	}
 
