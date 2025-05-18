@@ -287,6 +287,13 @@ body {
     overflow: hidden;
     text-align: center;
     margin-bottom: 24px;
+    transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.instrument-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 .instrument img {
