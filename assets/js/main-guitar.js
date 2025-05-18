@@ -9,8 +9,6 @@ let currentVolume = 0.8;
 const guitarContainer = document.getElementById('guitar-container');
 const volumeRange = document.getElementById('volume-range');
 const btnBack = document.getElementById('btn-back');
-const btnStop = document.getElementById('btn-stop');
-const btnHold = document.getElementById('btn-hold');
 const btnPick = document.getElementById('btn-pick');
 
 // Render guitarra
@@ -23,10 +21,6 @@ btnBack.onclick = () => window.location.href = '../index.html';
 
 // Volumen
 volumeRange.oninput = e => currentVolume = parseFloat(e.target.value);
-
-// STOP y HOLD
-btnStop.onclick = () => songPlayer.stop();
-btnHold.onclick = () => alert("Funcionalidad HOLD pendiente");
 
 // Botón púa
 btnPick.onclick = () => {

@@ -151,14 +151,6 @@ header {
     border-radius: 6px;
     margin: 0 6px;
 }
-.control-btn.stop {
-    background: #c33;
-    color: #fff;
-}
-.control-btn.hold {
-    background: #39c;
-    color: #fff;
-}
 #btn-pick {
     background: none;
     border: none;
