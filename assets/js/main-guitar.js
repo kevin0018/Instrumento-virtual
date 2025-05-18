@@ -15,7 +15,7 @@ const btnPick = document.getElementById('btn-pick');
 
 // Render guitarra
 guitar.render(guitarContainer, (idx) => {
-    guitar.play(idx, currentVolume);
+	guitar.play(idx, currentVolume);
 });
 
 // Botón volver
@@ -30,27 +30,27 @@ btnHold.onclick = () => alert("Funcionalidad HOLD pendiente");
 
 // Botón púa
 btnPick.onclick = () => {
-    for (let i = 0; i < guitar.notes.length; i++) {
-        setTimeout(() => guitar.play(i, currentVolume), i * 160);
-    }
+	for (let i = 0; i < guitar.notes.length; i++) {
+		setTimeout(() => guitar.play(i, currentVolume), i * 160);
+	}
 };
 
 // Canciones de ejemplo
 const songs = [
-    { name: "Cumpleaños Feliz", song: [0,1,2,1,3,4,3,1,2,1,0] },
-    { name: "Demo", song: [0,1,2,3,4,5] }
+	{name: "Cumpleaños Feliz", song: [0, 1, 2, 1, 3, 4, 3, 1, 2, 1, 0]},
+	{name: "Demo", song: [0, 1, 2, 3, 4, 5]}
 ];
 
 const songList = document.getElementById('song-list');
 songs.forEach(({name, song}, idx) => {
-    const li = document.createElement('li');
-    li.textContent = name;
-    li.onclick = () => songPlayer.playSong(song, 80, i => highlightString(i));
-    songList.appendChild(li);
+	const li = document.createElement('li');
+	li.textContent = name;
+	li.onclick = () => songPlayer.playSong(song, 80, i => highlightString(i));
+	songList.appendChild(li);
 });
 
 function highlightString(idx) {
-    const strings = document.querySelectorAll('.guitar-string');
-    strings.forEach((s, i) => s.classList.toggle('active', i === idx));
-    setTimeout(() => strings[idx].classList.remove('active'), 300);
+	const strings = document.querySelectorAll('.guitar-string');
+	strings.forEach((s, i) => s.classList.toggle('active', i === idx));
+	setTimeout(() => strings[idx].classList.remove('active'), 300);
 }
