@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = 'es'>
+	<head>
+		<meta charset = 'UTF-8'>
+		<title>Guitarra Virtual</title>
+		<link
+				rel = 'stylesheet'
+				href = '../assets/css/guitar.css'
+		>
+	</head>
+	<body>
+		<header>
+			<button
+					id = 'btn-back'
+					title = 'Volver al inicio'
+			>
+				<img
+						src = '../assets/images/back.svg'
+						id='icon-back'
+						alt = 'Volver'
+				>
+			</button>
+			<div class = 'instrument-icons'>
+				<img
+						src = '../assets/images/guitar-classic.svg'
+						id = 'icon-classic'
+						class = 'active'
+						alt = 'Clásica'
+				>
+				<img
+						src = '../assets/images/guitar-electric.svg'
+						id = 'icon-electric'
+						alt = 'Eléctrica'
+				>
+			</div>
+		</header>
+		<main id = 'main-guitar'>
+			<div id = 'guitar-container'></div>
+			<aside class = 'menu-songs'>
+				<h3>Canciones</h3>
+				<ul id = 'song-list'>
+				</ul>
+			</aside>
+			<!-- Guitar controls -->
+			<div class = 'guitar-controls'>
+				<div class = 'left'>
+					<label for = 'volume-range'>VOLUMEN</label>
+					<input
+							type = 'range'
+							id = 'volume-range'
+							min = '0'
+							max = '1'
+							step = '0.05'
+							value = '0.8'
+					>
+				</div>
+				<div class = 'right'>
+					<button
+							id = 'btn-pick'
+							title = 'Tocar con púa'
+					>
+						<img
+								src = '../assets/images/pick.svg'
+								alt = 'Púa'
+						/>
+					</button>
+				</div>
+			</div>
+		</main>
+		<script
+				type = 'module'
+				src = '../assets/js/main-guitar.js'
+		></script>
+	</body>
+</html>
