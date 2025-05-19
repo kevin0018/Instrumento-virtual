@@ -26,10 +26,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1px 20px;
+    padding: 10px 20px;
     color: white;
-    
-  }
+}
   
   /* --- LOGO --- */
   .logo img {
@@ -417,6 +416,12 @@ figure {
     .hamburger {
         display: block;
     }
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
 }
 
 @media (min-width: 640px) {
