@@ -21,7 +21,7 @@ export default class Guitar extends Instrument {
 
 			const noteLabelLeft = document.createElement("span");
 			noteLabelLeft.className = "note-label left";
-			noteLabelLeft.textContent = note;
+			noteLabelLeft.textContent = idx + 1;
 
 			// Cuerda
 			const stringElem = document.createElement("button");
@@ -31,7 +31,9 @@ export default class Guitar extends Instrument {
 
 			const noteLabelRight = document.createElement("span");
 			noteLabelRight.className = "note-label right";
-			noteLabelRight.textContent = idx + 1;
+			noteLabelRight.textContent = note;
+
+			
 
 			stringRow.appendChild(noteLabelLeft);
 			stringRow.appendChild(stringElem);

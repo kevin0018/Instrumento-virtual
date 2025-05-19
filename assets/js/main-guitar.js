@@ -31,7 +31,7 @@ btnPick.onclick = () => {
 
 // Canciones de ejemplo
 const songs = [
-	{name: "Cumpleaños Feliz", song: [0, 1, 2, 1, 3, 4, 3, 1, 2, 1, 0]},
+	{name: "Cumpleaños Feliz", song: [1, 1, 5, 1, 1, 5, 1, 1, 1, 5, 4, 3, 4, 5, 1, 1]},
 	{name: "Demo", song: [0, 1, 2, 3, 4, 5]}
 ];
 
