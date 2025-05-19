@@ -17,10 +17,10 @@
       
         <!-- Menú horizontal (visible en escritorio) -->
         <nav class="nav-desktop">
-			<a href="#">INICIO</a>
-			<a href="#">INSTRUCCIONES</a>
-			<a href="#">INSTRUMENTO</a>
-			<a href="#">SOBRE NOSOTROS</a>
+			<a href="#inicio">INICIO</a>
+            <a href="#instrucciones">INSTRUCCIONES</a>
+            <a href="#instrumentos">INSTRUMENTOS</a>
+            <a href="#sobre-nosotros">SOBRE NOSOTROS</a>
         </nav>
       
         <!-- Botón hamburguesa (visible en móvil) -->
@@ -31,10 +31,10 @@
       <aside class="sidebar" id="sidebar">
         <button class="close-btn" onclick="closeMenu()">✕</button>
         <nav class="sidebar-nav">
-			<a href="#">INICIO</a>
-			<a href="#">INSTRUCCIONES</a>
-			<a href="#">INSTRUMENTO</a>
-			<a href="#">SOBRE NOSOTROS</a>
+			<a href="#inicio" onclick="closeMenu()">INICIO</a>
+            <a href="#instrucciones" onclick="closeMenu()">INSTRUCCIONES</a>
+            <a href="#instrumentos" onclick="closeMenu()">INSTRUMENTOS</a>
+            <a href="#sobre-nosotros" onclick="closeMenu()">SOBRE NOSOTROS</a>
         </nav>
       </aside>
       
@@ -43,7 +43,7 @@
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <section class="hero">
+        <section id="inicio" class="hero">
             <h1 class="hero-title">Virtual Melody</h1>
             <p class="hero-credits">
 				Imagen de un piano y guitarra Foto de
@@ -57,7 +57,7 @@
             </p>
         </section>
         <!-- Instructions Section -->
-        <section class="instructions">
+        <section id="instrucciones" class="instructions">
 	        <h2 class="instructions-title">Instrucciones</h2>
 	        <div class="carousel-container">
 	            <button class="carousel-arrow left" id="prevBtn">&lt;</button>
@@ -90,7 +90,7 @@
 	        </div>
 	    </section>
         <!-- Instruments Section -->
-        <section class="instruments">
+        <section id="instrumentos" class="instruments">
             <h2 class="instruments-title">Instrumentos</h2>
             <div class="instruments-list">
                 <div class="instrument">
@@ -132,7 +132,7 @@
             </div>
         </section>
         <!-- About us Section -->
-        <section class="about">
+        <section id="sobre-nosotros" class="about">
             <h2 class="titulosn">Sobre nosotros</h2>
             <div class="photos">
                 <div class="card">
