@@ -1,31 +1,85 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Piano Virtual</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+    <link rel="stylesheet" href="../assets/css/piano.css">
 </head>
+
 <body>
-   <li><p>piano</p>
+    <div class="wrapper">
+        <header>
+            <h2>playable piano</h2>
+            <div class="colume-slider">
+                <span>volume</span> <input type="range">
+            </div>
+            <div class="colume keys-checkbox">
+                <span>show keys</span> <input type="checkbox">
+            </div>
+        </header>
+    </div>
 
+    <ul id="piano">
+        <li data-note="C4" class="key">
+            <div data-note="C#4" class="black-key">re#</div>
+            DO
+        </li>
+        <li data-note="D4" class="key">
+            <div data-note="D#4" class="black-key">MI#</div>
+            RE
+        </li>
 
-  <div class="piano">
-    
-    <p></p>
-    <div class="key white" data-note="C"></div>
-    <div class="key black" data-note="C#"></div>
-    <div class="key white" data-note="D"></div>
-    <div class="key black" data-note="D#"></div>
-    <div class="key white" data-note="E"></div>
-    <div class="key white" data-note="F"></div>
-    <div class="key black" data-note="F#"></div>
-    <div class="key white" data-note="G"></div>
-    <div class="key black" data-note="G#"></div>
-    <div class="key white" data-note="A"></div>
-    <div class="key black" data-note="A#"></div>
-    <div class="key white" data-note="B"></div>
-  </div>
-  <script src="/assets/js/piano.js"></script>
+        <li data-note="E4" class="key">
+            MI
+        </li>
+        <li data-note="F4" class="key">
+            <div data-note="F#4" class="black-key">SOL#</div>
+            FA
+        </li>
+        <li data-note="G4" class="key">
+            <div data-note="G#4" class="black-key">Si#</div>
+            SOL
+        </li>
+        <li data-note="A4" class="key">
+            <div data-note="A#4" class="black-key">LA#</div>
+            LA
+        </li>
+        <li data-note="B4" class="key">
+            SI
+        </li>
+        <li data-note="C4" class="key">
+            <div data-note="C#4" class="black-key">re#</div>
+            DO
+        </li>
+        <li data-note="D4" class="key">
+            <div data-note="D#4" class="black-key">MI#</div>
+            RE
+        </li>
+
+        <li data-note="E4" class="key">
+            MI
+        </li>
+        <li data-note="F4" class="key">
+            <div data-note="F#4" class="black-key">SOL#</div>
+            FA
+        </li>
+        <li data-note="G4" class="key">
+            <div data-note="G#4" class="black-key">Si#</div>
+            SOL
+        </li>
+        <li data-note="A4" class="key">
+            <div data-note="A#4" class="black-key">LA#</div>
+            LA
+        </li>
+        <li data-note="B4" class="key">
+            SI
+        </li>
+
+    </ul>
 </body>
+<link rel="stylesheet" href="script.js">
+
+
 </html>
