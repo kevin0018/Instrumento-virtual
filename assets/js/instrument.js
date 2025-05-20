@@ -6,8 +6,17 @@ export default class Instrument {
 	}
 
 	play(noteIndex, volume = 1) {
-		const audio = new Audio(`${this.soundPath}/${noteIndex + 1}.mp3`);
-		audio.volume = volume;
-		audio.play();
+		if (isNaN(noteIndex)){
+			const audio = new Audio(`${this.soundPath}/${noteIndex}.mp3`);
+			audio.volume = volume;
+			audio.play();
+		} else {
+			const audio = new Audio(`${this.soundPath}/${noteIndex + 1}.mp3`);
+			audio.volume = volume;
+			audio.play();
+		}
+		
+
+		
 	}
 }
