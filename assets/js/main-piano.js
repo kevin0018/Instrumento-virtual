@@ -1,5 +1,7 @@
 import Piano from "./piano.js";
 import SongPlayer from "./songPlayer.js";
+import OrientationBanner from '../../components/OrientationBanner.js';
+
 
 // Instanciación del piano y el reproductor de canciones
 const piano = new Piano();
@@ -115,3 +117,9 @@ function highlightPianoKey(noteName) {
 }
 
 renderSongsDropdown();
+
+const banner = new OrientationBanner({
+    // Puedes personalizar el mensaje si quieres
+    message: '¡Gira tu dispositivo para tocar el piano cómodamente!'
+});
+banner.mount();

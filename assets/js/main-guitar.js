@@ -1,5 +1,6 @@
 import Guitar from './guitar.js';
 import SongPlayer from './songPlayer.js';
+import OrientationBanner from "../../components/OrientationBanner.js";
 
 const guitar = new Guitar();
 const songPlayer = new SongPlayer(guitar);
@@ -48,3 +49,9 @@ function highlightString(idx) {
 	strings.forEach((s, i) => s.classList.toggle('active', i === idx));
 	setTimeout(() => strings[idx].classList.remove('active'), 300);
 }
+
+const banner = new OrientationBanner({
+    message: '¡Gira tu dispositivo para tocar la guitarra cómodamente!'
+});
+
+banner.mount();
