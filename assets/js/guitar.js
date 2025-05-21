@@ -2,7 +2,7 @@ import Instrument from './instrument.js';
 
 export default class Guitar extends Instrument {
 	constructor(type = "classic") {
-		const noteNames = ["DO", "SOL", "LA", "MI", "RE", "SI"];
+		const noteNames = ["DO", "RE", "MI", "FA", "SOL", "LA"];
         const pathParts = window.location.pathname.split("/pages/");
         const basePath = pathParts[0] ? pathParts[0] : "";
         const soundPath = `${basePath}/assets/sounds/guitar`;
