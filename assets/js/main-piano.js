@@ -10,6 +10,9 @@ const pianoContainer = document.getElementById("piano");
 const volumeRange = document.getElementById("volume-slider");
 const btnBack = document.getElementById("btn-back");
 
+// Button back
+btnBack.onclick = () => window.location.href = '../index.html';
+
 // Render piano
 piano.render(pianoContainer, (idx) => {
     piano.play(idx, currentVolume);
@@ -18,7 +21,6 @@ piano.render(pianoContainer, (idx) => {
 // Volume
 volumeRange.oninput = (e) => (currentVolume = parseFloat(e.target.value));
 
-// Button back
-btnBack.onclick = () => (window.location.href = "../index.html");
+
 
 
