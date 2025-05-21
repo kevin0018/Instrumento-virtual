@@ -1,42 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = 'en'>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Piano</title>
-  <link rel="stylesheet" href="../assets/css/piano.css">
-</head>
+	<head>
+		<meta charset = 'UTF-8'>
+		<meta
+				name = 'viewport'
+				content = 'width=device-width, initial-scale=1.0'
+		>
+		<title>Piano</title>
+		<link
+				rel = 'stylesheet'
+				href = '../assets/css/piano.css'
+		>
+	</head>
 
-<body>
-  <div class="button">
-    <button
-					id = 'btn-back'
-					title = 'Volver al inicio'
-			>
-				<img
-						src = '../assets/images/back.svg'
-						id='icon-back'
-						alt = 'Volver'
+	<body>
+
+		<div class = 'wrapper'>
+			<header>
+				<div class = 'button'>
+					<button
+							id = 'btn-back'
+							title = 'Volver al inicio'
+					>
+						<img
+								src = '../assets/images/back.svg'
+								id = 'icon-back'
+								alt = 'Volver'
+						>
+					</button>
+				</div>
+				<h2>Playable Piano</h2>
+				<div class = 'volume-slider'>
+					<span>Volume</span> <label for = 'volume-slider'></label><input
+						id = 'volume-slider'
+						type = 'range'
+						min = '0'
+						max = '1'
+						step = '0.01'
+						value = '1'
 				>
-			</button>
-  </div>
-  <div class="wrapper">
-    <header>
-      <h2>Playable Piano</h2>
-      <div class="volume-slider">
-        <span>Volume</span> <input id="volume-slider" type="range" min="0" max="1" step="0.01" value="1">
-      </div>
-      <div class="keys-checkbox">
-        <span>Show keys</span> <input id="toggle-labels" type="checkbox" checked>
-      </div>
-    </header>
-  </div>
+				</div>
+				<div class = 'dropdown'>
+					<button
+							class = 'dropdown-toggle'
+							id = 'dropdownMenuButton'
+							aria-haspopup = 'true'
+							aria-expanded = 'false'
+					>
+						Canciones
+					</button>
+					<ul
+							class = 'dropdown-menu'
+							id = 'songsDropdownMenu'
+					>
+					</ul>
+				</div>
+			</header>
+		</div>
+		<main class = 'main-layout'>
+			<section class = 'piano-section'>
+				<ul id = 'piano'></ul>
+			</section>
+		</main>
 
-  <ul id="piano">
-  </ul>
-
-  <script type="module" src="../assets/js/main-piano.js"></script>
-</body>
+		<script
+				type = 'module'
+				src = '../assets/js/main-piano.js'
+		></script>
+	</body>
 
 </html>
